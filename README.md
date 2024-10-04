@@ -25,3 +25,22 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Personal
+/nombre-del-proyecto
+│
+├── /e2e                  # Pruebas de end-to-end (opcional)
+├── /node_modules         # Dependencias de Node.js
+├── /src                  # Código fuente del proyecto
+│   ├── /app              # Componentes, servicios y módulos de tu aplicación
+│   ├── /assets           # Archivos estáticos (imágenes, fuentes, etc.)
+│   ├── /environments     # Archivos de configuración de entornos (desarrollo, producción)
+│   ├── index.html        # Archivo HTML base de tu aplicación
+│   ├── main.ts           # Punto de entrada de tu aplicación
+│   ├── styles.css        # Estilos globales (puede ser styles.scss si seleccionaste SCSS)
+│   └── polyfills.ts      # Compatibilidad con navegadores antiguos
+│
+├── angular.json          # Configuración del proyecto Angular
+├── package.json          # Dependencias del proyecto y scripts de npm
+├── tsconfig.json         # Configuración de TypeScript
+└── README.md             # Información del proyecto
