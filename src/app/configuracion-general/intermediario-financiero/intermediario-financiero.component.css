@@ -35,13 +35,13 @@ h2 {
   gap: 10px;
 }
 
-.credit-destination-table {
+.financial-table {
   width: 100%;
   border-collapse: collapse;
 }
 
-.credit-destination-table th,
-.credit-destination-table td {
+.financial-table th,
+.financial-table td {
   padding: 12px 15px;
   text-align: left;
   border-bottom: 1px solid #ddd;
@@ -49,12 +49,12 @@ h2 {
   color: #4a4a4a;
 }
 
-.credit-destination-table th {
+.financial-table th {
   background-color: #f4f9fd;
   font-weight: normal;
 }
 
-.credit-destination-table tr:hover {
+.financial-table tr:hover {
   background-color: #e1f0fa;
 }
 
