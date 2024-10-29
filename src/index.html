@@ -1,7 +1,8 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="es">
 <head>
   <meta charset="UTF-8">
+  <base href="./">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap">
@@ -9,6 +10,8 @@
   <title>FAG Dashboard</title>
 </head>
 <body>
+  <app-root>
+  </app-root>
   <header>
     <a href="/">
       <img src="assets/logo-fag.png" alt="Logo FAG">
@@ -31,8 +34,8 @@
   <div class="container">
     <aside>
       <ul>
-        <li><a href="#">Administración de garantías <i class="fas fa-chevron-down"></i></a></li>
-        <li><a href="#">Recuperación de garantías <i class="fas fa-chevron-down"></i></a></li>
+        <li><a href="/parametros-generales">Administración de garantías <i class="fas fa-chevron-down"></i></a></li>
+        <li><a href="/intermediario-financiero">Recuperación de garantías <i class="fas fa-chevron-down"></i></a></li>
         <li><a href="#">Procesos Contables <i class="fas fa-chevron-down"></i></a></li>
         <li><a href="#">Reportes <i class="fas fa-chevron-down"></i></a></li>
       </ul>
@@ -41,7 +44,7 @@
       <hr>
 
       <ul>
-        <li><a routerLink="/configuracion-general" routerLinkActive="active">Configuración General <i class="fas fa-cog"></i></a></li>
+        <li><a href="/configuracion-general">Configuración General <i class="fas fa-cog"></i></a></li>
         <!-- <button routerLink="/configuracion-general" routerLinkActive="active-link">Configuración General</button> -->
         <li><a href="#">Administrar roles y usuarios <i class="fas fa-users"></i></a></li>
       </ul>
