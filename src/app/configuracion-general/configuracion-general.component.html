@@ -1,0 +1,9 @@
+<div class="config-container">
+  <h2>Parametrización</h2>
+  <div class="grid-container">
+    <div class="card" *ngFor="let item of configItems">
+      <i [ngClass]="item.icon"></i>
+      <span>{{ item.label }}</span>
+    </div>
+  </div>
+</div>
