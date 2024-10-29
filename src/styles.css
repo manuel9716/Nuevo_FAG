@@ -66,14 +66,14 @@
     }
 
     aside ul li a {
-      text-decoration: none;
-      font-size: 18px;
-      color: #0277BD;
-      display: inline-flex;
-      align-items: center;
-      justify-content: space-between; /* Para alinear texto y icono */
-      padding: 10px 15px; /* Añadir espacio */
-      pointer-events: auto;
+      text-decoration: none !important; /* Importante: evita la sobreescritura */
+      font-size: 18px !important; /* Importante: evita la sobreescritura */
+      color: #0277BD !important; /* Importante: evita la sobreescritura */
+      display: inline-flex !important; /* Importante: evita la sobreescritura */
+      align-items: center !important; /* Importante: evita la sobreescritura */
+      justify-content: space-between !important; /* Para alinear texto y icono */
+      padding: 10px 15px !important; /* Añadir espacio */
+      pointer-events: auto !important; /* Importante: evita la sobreescritura */
     }
 
     aside ul li.active a {
