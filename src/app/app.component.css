@@ -1,0 +1,107 @@
+/* You can add global styles to this file, and also import other style files */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif; /* Cambia la fuente del cuerpo a Roboto */
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+  height: 40px;
+}
+
+header .right-info {
+  display: flex;
+  align-items: center;
+}
+
+header .right-info div {
+  margin-left: 20px;
+}
+
+header .right-info div span {
+  display: block;
+}
+
+.container {
+  display: flex;
+}
+
+aside {
+  width: 20%;
+  background-color: white;
+  padding: 20px;
+  box-shadow: 5px 0 30px rgba(0, 0, 0, 0.1); /* Sombra solo en el borde derecho */
+  min-height: calc(100vh - 50px);
+  font-family: 'Roboto', sans-serif;
+}
+
+aside ul {
+  padding: 0; /* Quitar el padding por defecto */
+  list-style-type: none; /* Quitar las viñetas */
+}
+
+aside ul li {
+  margin: 10px 0; /* Espacio entre los elementos de la lista */
+}
+
+aside hr {
+  border: none; /* Quitar el borde predeterminado */
+  border-top: 1px solid #ccc; /* Agregar un borde superior */
+  margin: 20px 0; /* Espacio arriba y abajo del separador */
+}
+
+aside ul li a {
+  text-decoration: none !important; /* Importante: evita la sobreescritura */
+  font-size: 18px !important; /* Importante: evita la sobreescritura */
+  color: #0277BD !important; /* Importante: evita la sobreescritura */
+  display: inline-flex !important; /* Importante: evita la sobreescritura */
+  align-items: center !important; /* Importante: evita la sobreescritura */
+  justify-content: space-between !important; /* Para alinear texto y icono */
+  padding: 10px 15px !important; /* Añadir espacio */
+  pointer-events: auto !important; /* Importante: evita la sobreescritura */
+}
+
+aside ul li.active a {
+  background-color: #009688; /* Color de fondo cuando es activo */
+  color: white; /* Cambiar el color del texto */
+  border-radius: 5px; /* Bordes redondeados */
+}
+
+aside ul li a i {
+  margin-left: 10px; /* Espacio entre el texto y el icono */
+  font-size: 16px; /* Tamaño del icono */
+}
+
+.main-content {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+}
+
+.main-content h1 {
+  color: #CCCCCC;
+  font-size: 100px;
+}
+
+.main-content p {
+  color: #666666;
+  font-size: 18px;
+}
