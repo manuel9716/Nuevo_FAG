@@ -44,8 +44,8 @@ header .right-info div span {
 aside {
   width: 20%;
   background-color: white;
-  padding: 20px;
-  box-shadow: 5px 0 30px rgba(0, 0, 0, 0.1); /* Sombra solo en el borde derecho */
+  padding: 10px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Sombra en el borde derecho */
   min-height: calc(100vh - 50px);
   font-family: 'Roboto', sans-serif;
 }

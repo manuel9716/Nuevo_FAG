@@ -1,13 +1,46 @@
+.tabs-container {
+  display: flex;
+  justify-content: center;
+  background-color: #f0f0f0;
+  border-bottom: 2px solid #e0e0e0;
+  margin: 0; /* Elimina cualquier margen adicional */
+  padding: 5px 0; /* Reduce el espacio superior e inferior */
+}
+
+.tabs-container button {
+  padding: 8px 16px; /* Reduce el padding dentro de los botones para hacerlos más compactos */
+  border: none;
+  background: none;
+  font-size: 16px;
+  font-weight: bold;
+  color: #007bff;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.tabs-container button:hover {
+  color: #0056b3;
+}
+
+.tabs-container .active {
+  color: #0056b3;
+  border-bottom: 2px solid #0056b3;
+}
+
+.content-container {
+  padding: 20px;
+}
+
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Divide el contenedor en 4 columnas */
+  grid-template-columns: repeat(3, 1fr);
   gap: 15px;
   padding: 20px;
 }
 
 .card {
   display: flex;
-  align-items: center; /* Alinea el icono y el texto horizontalmente */
+  align-items: center;
   padding: 10px 15px;
   border: 1px solid #00ACC1;
   border-radius: 5px;
@@ -20,13 +53,14 @@
 }
 
 .card i {
-  font-size: 60px; /* Ajusta el tamaño del icono para que sea más pequeño */
+  font-size: 20px;
   color: #00ACC1;
-  margin-right: 10px; /* Espacio entre el icono y el texto */
+  margin-right: 10px;
 }
 
 .card span {
   color: #00ACC1;
   font-weight: 500;
-  font-size: 14px; /* Ajusta el tamaño del texto */
+  font-size: 14px;
 }
+

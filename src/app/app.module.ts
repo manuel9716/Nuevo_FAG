@@ -9,6 +9,7 @@ import { DestinoComponent } from './configuracion-general/destino/destino.compon
 import { ParametroComisionComponent } from './configuracion-general/parametro-comision/parametro-comision.component';
 import { ParametrosGeneralesComponent } from './configuracion-general/parametros-generales/parametros-generales.component';
 import { IntermediarioFinancieroComponent } from './configuracion-general/intermediario-financiero/intermediario-financiero.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { IntermediarioFinancieroComponent } from './configuracion-general/interm
     DestinoComponent,
     ParametroComisionComponent,
     ParametrosGeneralesComponent,
-    IntermediarioFinancieroComponent
+    IntermediarioFinancieroComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

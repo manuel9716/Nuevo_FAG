@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { HomeComponent } from './home/home.component';
 import { ConfiguracionGeneralComponent } from './configuracion-general/configuracion-general.component';
 import { ParametrosGeneralesComponent } from './configuracion-general/parametros-generales/parametros-generales.component';
 import { IntermediarioFinancieroComponent } from './configuracion-general/intermediario-financiero/intermediario-financiero.component';
 
 const routes: Routes = [
+  { path: 'home', component: HomeComponent },
   { path: 'configuracion-general', component: ConfiguracionGeneralComponent },
   { path: 'parametros-generales', component: ParametrosGeneralesComponent },
   { path: 'intermediario-financiero', component: IntermediarioFinancieroComponent },
