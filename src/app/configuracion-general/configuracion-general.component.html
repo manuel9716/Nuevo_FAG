@@ -2,28 +2,33 @@
   <button (click)="selectTab('parametrizacion')" [class.active]="selectedTab === 'parametrizacion'">
     Parametrización
   </button>
-  <button (click)="selectTab('tablas')" [class.active]="selectedTab === 'tablas'">
+  <button (click)="selectTab('listasMaestras')" [class.active]="selectedTab === 'listasMaestras'">
     Listas de tablas maestras
   </button>
 </div>
 
 <div class="content-container">
-  <!-- Muestra el contenido de Parametrización -->
+  <!-- Contenido de Parametrización -->
   <div *ngIf="selectedTab === 'parametrizacion'" class="config-container">
     <div class="grid-container">
       <div class="card" *ngFor="let item of configItems">
         <i [ngClass]="item.icon"></i>
-        <span>{{ item.label }}</span>
+        <span>
+          <a [routerLink]="[item.route]">{{ item.label }}</a>
+        </span>
       </div>
     </div>
   </div>
 
-  <!-- Muestra el contenido de Listas de tablas maestras -->
-  <div *ngIf="selectedTab === 'tablas'" class="config-container">
+  <!-- Contenido de Listas de tablas maestras -->
+  <div *ngIf="selectedTab === 'listasMaestras'" class="config-container">
     <div class="grid-container">
       <div class="card" *ngFor="let item of listasMaestrasItems">
         <i [ngClass]="item.icon"></i>
-        <span>{{ item.label }}</span>
+        <!-- Usa routerLink para navegar a otros componentes -->
+        <span>
+          <a [routerLink]="[item.route]">{{ item.label }}</a>
+        </span>
       </div>
     </div>
   </div>

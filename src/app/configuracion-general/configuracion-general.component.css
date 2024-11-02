@@ -1,66 +1,72 @@
-.tabs-container {
-  display: flex;
-  justify-content: center;
-  background-color: #f0f0f0;
-  border-bottom: 2px solid #e0e0e0;
-  margin: 0; /* Elimina cualquier margen adicional */
-  padding: 5px 0; /* Reduce el espacio superior e inferior */
-}
-
-.tabs-container button {
-  padding: 8px 16px; /* Reduce el padding dentro de los botones para hacerlos más compactos */
-  border: none;
-  background: none;
-  font-size: 16px;
-  font-weight: bold;
-  color: #007bff;
-  cursor: pointer;
-  transition: color 0.3s;
-}
-
-.tabs-container button:hover {
-  color: #0056b3;
-}
-
-.tabs-container .active {
-  color: #0056b3;
-  border-bottom: 2px solid #0056b3;
-}
-
-.content-container {
-  padding: 20px;
-}
-
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+  gap: 15px; /* Espacio entre los elementos */
   padding: 20px;
 }
-
+/* Asegúrate de que estos estilos estén en tu archivo CSS */
 .card {
   display: flex;
   align-items: center;
-  padding: 10px 15px;
-  border: 1px solid #00ACC1;
-  border-radius: 5px;
+  justify-content: center;
+  flex-direction: column;
+  padding: 15px;
+  border: 1px solid #00ACC1; /* Color original del borde */
+  border-radius: 5px; /* Bordes redondeados */
+  background-color: #ffffff; /* Fondo blanco */
+  color: #00ACC1; /* Color del texto original */
+  text-decoration: none; /* Elimina el subrayado de los enlaces */
   transition: box-shadow 0.3s ease;
   cursor: pointer;
 }
 
 .card:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Efecto de sombra al pasar el mouse */
 }
 
 .card i {
-  font-size: 20px;
-  color: #00ACC1;
-  margin-right: 10px;
+  font-size: 24px;
+  color: #00ACC1; /* Color original de los iconos */
+  margin-bottom: 10px;
 }
 
-.card span {
-  color: #00ACC1;
+.card a {
+  color: #00ACC1; /* Color del texto del enlace */
   font-weight: 500;
   font-size: 14px;
+  text-decoration: none; /* Elimina el subrayado */
 }
 
+.card a:hover {
+  color: #007bff; /* Color al pasar el mouse, si es necesario */
+}
+
+.tabs-container {
+  display: flex;
+  justify-content: center;
+  background-color: #f8f9fa; /* Fondo claro general */
+  border-bottom: 2px solid #e0e0e0;
+  margin-bottom: 20px;
+}
+
+.tabs-container button {
+  flex: 1; /* Hace que los botones ocupen el mismo espacio */
+  padding: 10px 20px;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.tabs-container button.active {
+  background-color: #d0e0e8; /* Fondo del botón activo */
+  color: #00ACC1; /* Color del texto activo */
+  border-bottom: 2px solid #00ACC1; /* Línea de fondo activa */
+}
+
+.tabs-container button:hover {
+  background-color: #d0e0e8; /* Fondo al pasar el mouse */
+}
