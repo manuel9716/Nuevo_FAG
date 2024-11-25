@@ -26,6 +26,7 @@ import { ProcesosAutomaticosComponent } from './configuracion-general/procesos-a
 import { PerfilesPermisosComponent } from './configuracion-general/perfiles-permisos/perfiles-permisos.component';
 import { DepartamentosMunicipiosComponent } from './configuracion-general/departamentos-municipios/departamentos-municipios.component';
 import { TipoProductorComponent } from './configuracion-general/tipo-productor/tipo-productor.component';
+import { CrearListaComponent } from './configuracion-general/listas-referencia/crear-lista/crear-lista.component';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { TipoProductorComponent } from './configuracion-general/tipo-productor/t
     ProcesosAutomaticosComponent,
     PerfilesPermisosComponent,
     DepartamentosMunicipiosComponent,
-    TipoProductorComponent
+    TipoProductorComponent,
+    CrearListaComponent
   ],
   imports: [
     BrowserModule,

@@ -1,1 +1,80 @@
-<p>calendario works!</p>
+<div class="calendar-view">
+  <!-- Panel Izquierdo: Calendario -->
+  <div class="calendar-section">
+    <button class="back-button">← Ver calendarios por año</button>
+    <p><strong>Selecciona el día en el calendario</strong> para agregar un horario</p>
+    <div class="calendar">
+      <!-- Aquí puedes usar una librería de calendario para más funcionalidad -->
+      <p>Enero 2024</p>
+      <table>
+        <thead>
+          <tr>
+            <th>L</th>
+            <th>M</th>
+            <th>X</th>
+            <th>J</th>
+            <th>V</th>
+            <th>S</th>
+            <th>D</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Días del mes -->
+          <tr>
+            <td class="day">1</td>
+            <td class="day">2</td>
+            <td class="day">3</td>
+            <!-- Completa los días restantes -->
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p>Recuerda que el horario de <strong>los días hábiles</strong> son:</p>
+    <div class="time-inputs">
+      <label for="hora-inicio">Hora inicio:</label>
+      <select id="hora-inicio">
+        <option>7:00 a.m</option>
+        <!-- Más opciones de hora -->
+      </select>
+      <label for="hora-fin">Hora Fin:</label>
+      <select id="hora-fin">
+        <option>5:00 p.m</option>
+        <!-- Más opciones de hora -->
+      </select>
+    </div>
+    <button class="save-button">Guardar</button>
+  </div>
+
+  <!-- Panel Derecho: Configuración de Horario -->
+  <div class="schedule-section">
+    <p><strong>Conoce la nomenclatura del calendario</strong></p>
+    <div class="legend">
+      <span class="label working-day">Días hábiles</span>
+      <span class="label non-working-day">Días no hábiles</span>
+      <span class="label exception-day">Días con excepciones</span>
+    </div>
+    <div class="date-picker">
+      <label for="selected-date">Fecha seleccionada</label>
+      <input type="text" id="selected-date" readonly />
+    </div>
+    <div class="day-type">
+      <button class="day-button">Día hábil</button>
+      <button class="day-button">Día no hábil</button>
+    </div>
+    <p><strong>Agrega Horario</strong></p>
+    <div class="time-inputs">
+      <label for="hora-inicio">Hora inicio:</label>
+      <select id="hora-inicio">
+        <option>Seleccionar</option>
+        <!-- Más opciones de hora -->
+      </select>
+      <span class="arrow">→</span>
+      <label for="hora-fin">Hora fin:</label>
+      <select id="hora-fin">
+        <option>Seleccionar</option>
+        <!-- Más opciones de hora -->
+      </select>
+    </div>
+    <button class="save-button">Guardar</button>
+  </div>
+</div>

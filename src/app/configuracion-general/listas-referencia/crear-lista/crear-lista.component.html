@@ -1,0 +1,47 @@
+<div class="container">
+  <header class="page-header">
+    <h1>CREAR LISTA</h1>
+  </header>
+</div>
+<div>
+  <section class="form-section">
+    <p>Completa los campos para crear una lista de referencia</p>
+    <form>
+      <!-- Campo Nombre de la Lista -->
+      <div class="form-group">
+        <label for="nombre-lista">Nombre de la lista *</label>
+        <input
+          type="text"
+          id="nombre-lista"
+          name="nombre-lista"
+          placeholder="Escribe el nombre"
+          required
+        />
+      </div>
+
+      <!-- Campo Descripción -->
+      <div class="form-group">
+        <label for="descripcion">Descripción</label>
+        <textarea
+          id="descripcion"
+          name="descripcion"
+          placeholder="Añade una descripción"
+        ></textarea>
+      </div>
+
+      <!-- Botón Crear Atributo -->
+      <div class="action-buttons">
+        <button type="button" class="btn create-attribute-btn">
+          ➕ Crear atributo
+        </button>
+      </div>
+
+      <!-- Botones de acción -->
+      <div class="form-actions">
+        <button type="button" class="btn cancel-btn">Cancelar</button>
+        <!-- <a class="btn create-btn" routerLink="#" routerLinkActive="active-link">Cancelar</a> -->
+        <button type="submit" routerLink="#" class="btn create-list-btn">Crear lista</button>
+      </div>
+    </form>
+  </section>
+</div>

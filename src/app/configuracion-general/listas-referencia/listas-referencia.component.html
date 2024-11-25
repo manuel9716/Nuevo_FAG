@@ -1,1 +1,90 @@
-<p>listas-referencia works!</p>
+<div class="list-view">
+  <header class="header">
+    <h2>Listas de Referencia</h2>
+    <div class="header-actions">
+      <button class="btn export-btn">⬇️ Exportar listas</button>
+      <!-- <button class="btn create-btn">
+        <a routerLink="./crear-lista" routerLinkActive="active-link"></a>➕ Crear lista
+      </button> -->
+      <a class="btn create-btn" routerLink="/crear-lista" routerLinkActive="active-link">➕ Crear lista</a>
+    </div>
+  </header>
+
+  <div class="filter-section">
+    <button class="filter-btn">Filtro</button>
+    <input type="text" placeholder="Filtrar por nombre de la lista" class="filter-input" />
+    <div class="search-section">
+      <label for="sort-by">ID</label>
+      <select id="sort-by">
+        <option value="id">ID</option>
+        <!-- Otras opciones de ordenamiento -->
+      </select>
+      <button class="search-btn">Buscar</button>
+    </div>
+  </div>
+
+  <table class="list-table">
+    <thead>
+      <tr>
+        <th>ID_Lista ⬇️</th>
+        <th>Nombre de la lista</th>
+        <th>Fecha de Creación</th>
+        <th>Usuario creación</th>
+        <th>Editar</th>
+        <th>Detalles</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>T000001</td>
+        <td>Tipo de cartera</td>
+        <td>26/09/2023</td>
+        <td>Andrés Pérez</td>
+        <td><button class="icon-btn">✏️</button></td>
+        <td><button class="icon-btn">🔍</button></td>
+      </tr>
+      <tr>
+        <td>T000002</td>
+        <td>Tipo de programa</td>
+        <td>26/09/2024</td>
+        <td>Carlos Quintero</td>
+        <td><button class="icon-btn">✏️</button></td>
+        <td><button class="icon-btn">🔍</button></td>
+      </tr>
+      <tr>
+        <td>T000003</td>
+        <td>Modalidad de pago</td>
+        <td>26/09/2024</td>
+        <td>Felipe Caicedo</td>
+        <td><button class="icon-btn">✏️</button></td>
+        <td><button class="icon-btn">🔍</button></td>
+      </tr>
+      <tr>
+        <td>T000004</td>
+        <td>Programa de Garantia</td>
+        <td>26/09/2023</td>
+        <td>Pepito Juarez</td>
+        <td><button class="icon-btn">✏️</button></td>
+        <td><button class="icon-btn">🔍</button></td>
+      </tr>
+      <tr>
+        <td>T000005</td>
+        <td>Departamento</td>
+        <td>26/09/2023</td>
+        <td>Santiago Ortiz</td>
+        <td><button class="icon-btn">✏️</button></td>
+        <td><button class="icon-btn">🔍</button></td>
+      </tr>
+      <!-- Repite las filas según sea necesario -->
+    </tbody>
+  </table>
+
+  <footer class="pagination">
+    <span>Anterior</span>
+    <span class="page-number active">1</span>
+    <span class="page-number">2</span>
+    <span class="page-number">3</span>
+    <span class="page-number">4</span>
+    <span>Siguiente</span>
+  </footer>
+</div>

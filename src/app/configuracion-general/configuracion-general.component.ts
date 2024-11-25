@@ -9,7 +9,7 @@ import { RouterModule } from '@angular/router';
 export class ConfiguracionGeneralComponent implements OnInit {
   selectedTab: string = 'parametrizacion';
   configItems = [
-    { label: 'Listas de referencia', icon: 'fas fa-list', route: '/listas-referencia' },
+    { label: 'Listas de referencia', icon: 'fas fa-list', route: '/listas-referencias' },
     { label: 'Calendario', icon: 'fas fa-calendar-alt', route: '/calendario' },
     { label: 'Modalidades de Pago', icon: 'fas fa-hand-holding-usd', route: '/modalidades-pago' },
     { label: 'Comisionistas BMC', icon: 'fas fa-dollar-sign', route: '/comisionistas-bmc' },
@@ -20,7 +20,7 @@ export class ConfiguracionGeneralComponent implements OnInit {
     { label: 'Parámetros contables', icon: 'fas fa-chart-line', route: '/parametros-contables' },
     { label: 'Máquinas de estados', icon: 'fas fa-cogs', route: '/maquina-estados' },
     { label: 'Parámetros generales', icon: 'fas fa-sliders-h', route: '/parametros-generales' },
-    { label: 'Menús', icon: 'fas fa-bars', route: '/menu' },
+    { label: 'Menús', icon: 'fas fa-bars', route: '/menus' },
     { label: 'Procesos automáticos', icon: 'fas fa-sync', route: '/procesos-automaticos' },
     { label: 'Perfiles y permisos', icon: 'fas fa-user-cog', route: '/perfiles-permisos' },
   ];

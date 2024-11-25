@@ -1,0 +1,232 @@
+.calendar-view {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.calendar-section,
+.schedule-section {
+  width: 48%;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.back-button {
+  background: none;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.calendar {
+  background-color: #e0f7fa;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 8px;
+  text-align: center;
+}
+
+.day {
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 50%;
+  transition: background-color 0.3s;
+}
+
+.day:hover {
+  background-color: #b2ebf2;
+}
+
+.legend {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.label {
+  font-size: 12px;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.working-day {
+  background-color: #4caf50;
+  color: white;
+}
+
+.non-working-day {
+  background-color: #f44336;
+  color: white;
+}
+
+.exception-day {
+  background-color: #ffeb3b;
+  color: black;
+}
+
+.time-inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.save-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.save-button:hover {
+  background-color: #0056b3;
+}
+
+.arrow {
+  margin: 0 10px;
+}
+
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* Heading */
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Legend Section */
+.legend {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.legend span {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  font-size: 14px;
+}
+
+.legend .dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.legend .working-day {
+  background-color: #4caf50;
+}
+
+.legend .non-working-day {
+  background-color: #f44336;
+}
+
+.legend .exception-day {
+  background-color: #ffeb3b;
+}
+
+/* Form Elements */
+label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 8px 16px;
+  background-color: #00ACC1;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #008ba3;
+}
+
+.time-inputs {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.time-inputs select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 45%;
+}
+
+.arrow {
+  font-size: 16px;
+  color: #333;
+  margin: 0 10px;
+}
+
+.day-type {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.day-type button {
+  background-color: #e0e0e0;
+  color: #333;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  margin: 0 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.day-type button.active {
+  background-color: #00ACC1;
+  color: #fff;
+}

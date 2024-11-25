@@ -21,7 +21,10 @@ import { ProcesosAutomaticosComponent } from './configuracion-general/procesos-a
 import { ProgramaGarantiaComponent } from './configuracion-general/programa-garantia/programa-garantia.component';
 import { ReglasNegocioComponent } from './configuracion-general/reglas-negocio/reglas-negocio.component';
 import { TarifasComisionesComponent } from './configuracion-general/tarifas-comisiones/tarifas-comisiones.component';
-import { TipoProductorComponent } from './configuracion-general/tipo-productor/tipo-productor.component'
+import { TipoProductorComponent } from './configuracion-general/tipo-productor/tipo-productor.component';
+import { CrearListaComponent } from './configuracion-general/listas-referencia/crear-lista/crear-lista.component'
+
+
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'configuracion-general', component: ConfiguracionGeneralComponent },
@@ -44,7 +47,8 @@ const routes: Routes = [
   { path: 'programa-garantia', component: ProgramaGarantiaComponent},
   { path: 'reglas-negocio', component: ReglasNegocioComponent},
   { path: 'tarifas-comisiones', component: TarifasComisionesComponent},
-  { path: 'tipo-productor', component: TipoProductorComponent}
+  { path: 'tipo-productor', component: TipoProductorComponent},
+  { path: 'crear-lista', component: CrearListaComponent}
   // Otras rutas...
 ];
 
